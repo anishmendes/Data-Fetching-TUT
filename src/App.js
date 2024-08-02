@@ -7,7 +7,7 @@ import { useGlobalContext } from './context'
 
 const App = () => {
 
-  const data = useGlobalContext;
+  const data = useGlobalContext();
 
   return (
     <>
