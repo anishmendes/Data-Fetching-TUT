@@ -33,6 +33,9 @@ const AppProvider = ({ children }) => {
 
 
     const fetchApiData = async (url) => {
+
+
+        dispatch({ type: "SET_LOADING"});
         try {
             const res = await fetch(url);
             const data = await res.json();
@@ -57,7 +60,7 @@ const AppProvider = ({ children }) => {
     }, );
 
     return (
-        <AppContext.Provider value={"anish mainali"}>
+        <AppContext.Provider value={{...state}}>
             {children}
         </AppContext.Provider>
     )
