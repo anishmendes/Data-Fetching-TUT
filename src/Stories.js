@@ -30,7 +30,7 @@ const Stories = () => {
                   <div className='card'>
                    <h2>{title}</h2>
                    <p>
-                    By {author} | <span>{num_comments}</span> comments
+                    By  <span>{author}</span> | <span>{num_comments}</span> comments
                    </p>
                    <div className='card-button'>
                     <a href={url} target="_blank">
