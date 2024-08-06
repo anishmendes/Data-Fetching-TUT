@@ -57,7 +57,7 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         fetchApiData(`${API}query=${state.query}&page=${state.page} `);
-    }, );
+    }, []);
 
     return (
         <AppContext.Provider value={{...state}}>
