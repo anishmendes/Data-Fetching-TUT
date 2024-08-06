@@ -2,7 +2,7 @@
 import Search from './Search'
 import Pagination from './Pagination'
 import Stories from './Stories'
-
+import "./App.css";
 
 
 const App = () => {
@@ -11,9 +11,7 @@ const App = () => {
 
   return (
     <>
-    <div>
-        welcome to anish website 
-    </div>
+   
 
     <Search/>
     <Pagination/>

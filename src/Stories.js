@@ -21,13 +21,15 @@ const Stories = () => {
 
     return (
         <>
-            <h2>My tech new post  </h2>
+           <div className='stories-div'>
+
+          
             {hits.map((curPost) => {
                 const { title, author, objectID, url, num_comments} = curPost;
 
                 return (
                  <>
-                  <div className='card'>
+                  <div className='card' key={objectID}>
                    <h2>{title}</h2>
                    <p>
                     By  <span>{author}</span> | <span>{num_comments}</span> comments
@@ -44,6 +46,7 @@ const Stories = () => {
 
               )
             })}
+             </div>
         </>
     )
 }
