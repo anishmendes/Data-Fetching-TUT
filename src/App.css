@@ -133,3 +133,19 @@ span {
   color: #04585d;
   font-weight: 600;
 }
+form {
+  display: grid;
+  place-items: center;
+}
+
+
+
+input {
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+}
