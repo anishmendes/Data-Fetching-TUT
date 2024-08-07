@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: rgb(144, 172, 232);
+  background-color: rgb(166, 180, 210);
 }
 
 h1 {
@@ -51,7 +51,7 @@ span {
   min-width: 20rem;
   width: 40vw;
   padding: 4rem;
-  background-color: #d6cccc;
+  background-color: #acb5b2;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 0.5rem;
   color: #15133c;
@@ -62,14 +62,41 @@ span {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 15px;
+  background: linear-gradient(135deg, #ada8a8, #e0e0e0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-button a {
-  color: #04585d;
+  color: #02383b;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #c4c2c2;
   font-weight: 400;
   font-size: 1.6rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.card-button a:hover {
+  color: #fff;
+  background: #04585d;
+  transform: scale(1.05);
 }
 
 .card-button a:last-child {
   color: red;
+}
+
+.card-button a:last-child:hover {
+  background: red;
+  color: #fff;
 }
