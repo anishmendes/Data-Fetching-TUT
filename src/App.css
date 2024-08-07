@@ -62,7 +62,7 @@ span {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 2px;
   background: linear-gradient(135deg, #ada8a8, #e0e0e0);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
