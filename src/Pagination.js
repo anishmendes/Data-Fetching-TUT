@@ -3,13 +3,13 @@ import { useGlobalContext } from './context'
 
 const Pagination = () => {
 
-  const {page, nbPages, getPrevPage, getNextPage} = useGlobalContext();
+  const {page,  getPrevPage, getNextPage} = useGlobalContext();
   return (
    <>
-   <div className="pagination_btn">
+   <div className="pagination-btn">
     <button onClick={()=> getPrevPage()}>PREV</button>
     <p>
-      {page + 1} of {nbPages}
+      {page + 1} 
     </p>
     <button onClick={()=> getNextPage()}>NEXT</button>
    </div>
