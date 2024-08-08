@@ -149,3 +149,45 @@ input {
   border-bottom: 0.2rem solid #15133c;
   outline: none;
 }
+
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #15133c;
+  color: #ffffff;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* responsive layout  */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56%;
+  }
+
+  .card {
+    min-width: 45rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 51%;
+  }
+
+  .card {
+    min-width: 35rem;
+    padding: 2rem;
+  }
+}

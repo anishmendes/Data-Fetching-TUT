@@ -11,7 +11,7 @@ const reducer = (state, action) => {
                 ...state,
                 isLoading: false,
                 hits: action.payload.hits,
-                // nbpage: action.paylaod.nbPage,
+                nbPages: action.payload.nbPages,
 
             };
             case "REMOVE_POST":
